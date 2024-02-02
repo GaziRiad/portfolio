@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Riad Hallouch - Web Developer & Designer</title>
+    <meta name="title" content="Riad Hallouch - Web Developer & Designer" />
+    <meta
+      name="description"
+      content="This is a personal portfolio for Riad Hallouch to showcase all his work."
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+  </head>
+
+  <body>
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preloader" data-preloader>
+      <div class="circle"></div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="170"
+            height="40"
+            alt="Pfolio home"
+          />
+        </a>
+
+        <button
+          class="nav-toggle-btn"
+          data-nav-toggler
+          data-nav-toggle-btn
+          aria-label="Toggle menu"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Resume</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Riad Hallouch</h1>
+
+              <p class="hero-subtitle">Creative Web Developer & Designer</p>
+
+              <div class="hero-banner">
+                <img
+                  src="./assets/images/hero-banner.jpg"
+                  width="800"
+                  height="800"
+                  alt="kane williams"
+                  class="w-100"
+                />
+              </div>
+
+              <p class="section-text">
+                Hi, I’m Riad Hallouch and I am creative web developer and
+                designer who dream making the world better place by creating
+                captivating products.
+              </p>
+
+              <a href="#" class="btn has-before">
+                <span class="span">Download CV</span>
+
+                <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="service" aria-labelledby="service-label">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <p class="section-subtitle">Services That I Provide</p>
+
+                <h2 class="h2 section-title" id="service-label">Services</h2>
+              </div>
+
+              <p class="section-text">
+                Specializing in web development, front-end design, and back-end
+                programming, my services focus on crafting visually stunning and
+                responsive websites. With a commitment to excellence, I create
+                robust applications and intuitive user interfaces, seamlessly
+                blending form and function. Let's collaborate to bring your
+                digital vision to life and make a lasting impact.
+              </p>
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-container service-list" data-slider-container>
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="desktop-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Website Development</h3>
+
+                    <p class="card-text">
+                      Elevating your online presence with expertly crafted,
+                      responsive websites that prioritize seamless functionality
+                      and user engagement.
+                    </p>
+
+                    <span class="text-lg card-number">01</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my website design service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="podium-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">SEO Optiomization</h3>
+
+                    <p class="card-text">
+                      Boosting your digital footprint through strategic
+                      optimization, driving organic traffic and enhancing your
+                      online visibility.
+                    </p>
+
+                    <span class="text-lg card-number">02</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my SEO Marketing service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="basket-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">eCommerce</h3>
+
+                    <p class="card-text">
+                      Tailoring solutions for a smooth and secure online
+                      shopping experience, from intuitive navigation to
+                      efficient checkout processes.
+                    </p>
+
+                    <span class="text-lg card-number">03</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my eCommerce service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="color-filter-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Web Design</h3>
+
+                    <p class="card-text">
+                      Transforming concepts into visually captivating and
+                      intuitive interfaces, ensuring a seamless and enjoyable
+                      user experience.
+                    </p>
+
+                    <span class="text-lg card-number">04</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my Graphic Design service"
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="slider-controls">
+                <button
+                  class="slider-control prev"
+                  data-slider-prev
+                  aria-label="Slide to previous item"
+                >
+                  <div class="line"></div>
+                  <div class="arrow"></div>
+                </button>
+
+                <button
+                  class="slider-control next"
+                  data-slider-next
+                  aria-label="Slide to next item"
+                >
+                  <div class="line"></div>
+                  <div class="arrow"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SKILLS
+      -->
+
+        <section class="section skills" aria-label="our skills">
+          <div class="container">
+            <p class="section-subtitle">I Make The Future</p>
+
+            <h2 class="h2 section-title">I Develop & Create Digital Future.</h2>
+
+            <div class="skills-wrapper">
+              <div>
+                <p class="section-text">
+                  Leveraging a robust foundation in web development, I bring
+                  expertise in creating visually appealing designs and
+                  implementing effective SEO strategies.
+                </p>
+
+                <p class="section-text">
+                  With a comprehensive understanding of both front-end and
+                  back-end technologies, my skill set is honed to craft holistic
+                  digital solutions. My background blends academic excellence in
+                  computer science with hands-on experience in the dynamic realm
+                  of web development and design.
+                </p>
+
+                <a href="#" class="btn has-before">riadhallouch447@gmail.com</a>
+              </div>
+
+              <div>
+                <ul class="skills-list">
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Frontend development</p>
+
+                      <data class="progress-value" value="90">90%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 90%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Backend development</p>
+
+                      <data class="progress-value" value="70">70%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 70%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Design</p>
+
+                      <data class="progress-value" value="70">70%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 70%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Web Design</p>
+
+                      <data class="progress-value" value="80">80%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 80%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #PORTFOLIO
+      -->
+
+        <section class="portfolio" aria-labelledby="portfolio-label">
+          <div class="title-wrapper container">
+            <div>
+              <p class="section-subtitle" id="portfolio-label">Our Works</p>
+
+              <h2 class="h2 section-title">Portfolio</h2>
+            </div>
+
+            <p class="section-text">
+              A curated collection of my endeavors, showcasing a fusion of
+              creativity and technical prowess. Each project reflects a
+              commitment to innovation, design finesse, and seamless
+              functionality. Explore the convergence of my skills in these
+              dynamic digital endeavors.
+            </p>
+          </div>
+
+          <div class="slider" data-slider>
+            <ul class="slider-container" data-slider-container>
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="./assets/images/portfolio-2.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Holocrow. 001</h3>
+
+                    <p class="card-text">Website Design</p>
+                  </div>
+
+                  <a
+                    href="https://holocrow.com/"
+                    class="layer-link"
+                    target="_blank"
+                    >Holocrow.com</a
+                  >
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="./assets/images/portfolio-3.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">The Wild Oasis</h3>
+
+                    <p class="card-text">UX Design / Web App</p>
+                  </div>
+
+                  <a
+                    href="https://the-wild-oasis.vercel.app/dashboard"
+                    target="_blank"
+                    class="layer-link"
+                  ></a>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="./assets/images/portfolio-2.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Holocrow.</h3>
+
+                    <p class="card-text">Website Design</p>
+                  </div>
+
+                  <a
+                    href="https://holocrow.com/"
+                    class="layer-link"
+                    target="_blank"
+                    >Holocrow.com</a
+                  >
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="./assets/images/portfolio-5.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Portfolio v1</h3>
+
+                    <p class="card-text">Branding / Design</p>
+                  </div>
+
+                  <a
+                    href="https://findriadhallouch10.netlify.app/"
+                    target="_blank"
+                    class="layer-link"
+                  ></a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="slider-controls">
+              <button
+                class="slider-control prev"
+                data-slider-prev
+                aria-label="Slide to previous item"
+              >
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button
+                class="slider-control next"
+                data-slider-next
+                aria-label="Slide to next item"
+              >
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="section blog" aria-labelledby="blog-label">
+          <div class="container">
+            <p class="section-subtitle" id="blog-label">Recent Articles</p>
+
+            <h2 class="h2 section-title">Latest News</h2>
+
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 700; --height: 470"
+                  >
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      width="700"
+                      height="470"
+                      loading="lazy"
+                      alt="UX in Ecommerce – 5 things to avoid."
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <time class="time" datetime="2022-06-27">
+                      <span class="span text-lg">27</span>
+                      June 2022
+                    </time>
+
+                    <div>
+                      <h3 class="h3 card-title">
+                        UX in Ecommerce – 5 things to avoid.
+                      </h3>
+
+                      <p class="card-text">
+                        Phasellus et lacus suscipit congue nis in the miss mine
+                        one miss the drana risus in tincidunt ornare.
+                      </p>
+
+                      <a href="#" class="btn has-before">
+                        <span class="span">Read more</span>
+
+                        <ion-icon name="arrow-forward"></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Get in touch</p>
+          </li>
+
+          <li>
+            <a href="mailto:info@kwilliams.com" class="footer-link"
+              >riadhallouch447@gmail.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Locations</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sidi bel abbes — Algeria</a>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.instagram.com/riadh_gazi/"
+              target="_blank"
+              class="social-link"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/Riadh_Gazi"
+              target="_blank"
+              class="social-link"
+            >
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
